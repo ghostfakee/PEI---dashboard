@@ -1,4 +1,4 @@
-para rodar o dashboard é necessário baixar ums pendências 
+para rodar o dashboard é necessário baixar umas pendências 
 
 Pip install plotly e scipy
 pip install streamlit
