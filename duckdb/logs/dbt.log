@@ -1,0 +1,30 @@
+[0m17:49:41.833089 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BAB2B04080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BAB2AE7B30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BAB2E19940>]}
+
+
+============================== 17:49:41.845088 | a1f5b21c-6924-4ab8-bdcf-98dc2e13fc12 ==============================
+[0m17:49:41.845088 [info ] [MainThread]: Running with dbt=1.11.7
+[0m17:49:41.845088 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\lucas.barros\\.dbt', 'invocation_command': 'dbt init dbt_agro_clima', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m17:49:41.926088 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\lucas.barros\.dbt
+[0m17:49:41.929088 [debug] [MainThread]: Starter project path: C:\Users\lucas.barros\Documents\duckdb\.venv\Lib\site-packages\dbt\include\starter_project
+[0m17:49:41.976088 [info ] [MainThread]: 
+Your new dbt project "dbt_agro_clima" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m17:49:41.977088 [info ] [MainThread]: Setting up your profile.
+[0m17:54:34.875131 [info ] [MainThread]: Profile dbt_agro_clima written to C:\Users\lucas.barros\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m17:54:34.876130 [debug] [MainThread]: Command `dbt init` succeeded at 17:54:34.875131 after 293.18 seconds
+[0m17:54:34.876130 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BAB465F920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BAB343FCB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BAB3031730>]}
+[0m17:54:34.876130 [debug] [MainThread]: Flushing usage events
+[0m17:54:36.510542 [debug] [MainThread]: An error was encountered while trying to flush usage events

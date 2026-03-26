@@ -1,0 +1,1236 @@
+[0m17:55:18.374719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F88D8C0530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F890A54920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F890B39C10>]}
+
+
+============================== 17:55:18.378718 | 1b445f98-8faa-4d58-a1ea-cdf819b4dfdf ==============================
+[0m17:55:18.378718 [info ] [MainThread]: Running with dbt=1.11.7
+[0m17:55:18.378718 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\lucas.barros\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\lucas.barros\\Documents\\duckdb\\dbt_agro_clima\\logs'}
+[0m17:55:18.391085 [info ] [MainThread]: dbt version: 1.11.7
+[0m17:55:18.391085 [info ] [MainThread]: python version: 3.12.10
+[0m17:55:18.391085 [info ] [MainThread]: python path: C:\Users\lucas.barros\Documents\duckdb\.venv\Scripts\python.exe
+[0m17:55:18.392085 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m17:55:18.458086 [info ] [MainThread]: Using profiles dir at C:\Users\lucas.barros\.dbt
+[0m17:55:18.458086 [info ] [MainThread]: Using profiles.yml file at C:\Users\lucas.barros\.dbt\profiles.yml
+[0m17:55:18.459088 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\lucas.barros\Documents\duckdb\dbt_agro_clima\dbt_project.yml
+[0m17:55:18.460085 [info ] [MainThread]: adapter type: duckdb
+[0m17:55:18.460085 [info ] [MainThread]: adapter version: 1.10.1
+[0m17:55:18.500757 [info ] [MainThread]: Configuration:
+[0m17:55:18.500757 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:55:18.500757 [info ] [MainThread]:   dbt_project.yml file [[31mERROR invalid[0m]
+[0m17:55:18.500757 [info ] [MainThread]: Required dependencies:
+[0m17:55:18.501761 [debug] [MainThread]: Executing "git --help"
+[0m17:55:18.528761 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:55:18.528761 [debug] [MainThread]: STDERR: "b''"
+[0m17:55:18.529762 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:55:18.529762 [info ] [MainThread]: Connection:
+[0m17:55:18.529762 [info ] [MainThread]:   database: dev
+[0m17:55:18.529762 [info ] [MainThread]:   schema: main
+[0m17:55:18.529762 [info ] [MainThread]:   path: dev.duckdb
+[0m17:55:18.530762 [info ] [MainThread]:   config_options: None
+[0m17:55:18.530762 [info ] [MainThread]:   extensions: None
+[0m17:55:18.530762 [info ] [MainThread]:   settings: {}
+[0m17:55:18.530762 [info ] [MainThread]:   external_root: .
+[0m17:55:18.531762 [info ] [MainThread]:   use_credential_provider: None
+[0m17:55:18.531762 [info ] [MainThread]:   attach: None
+[0m17:55:18.531762 [info ] [MainThread]:   filesystems: None
+[0m17:55:18.531762 [info ] [MainThread]:   remote: None
+[0m17:55:18.531762 [info ] [MainThread]:   plugins: None
+[0m17:55:18.531762 [info ] [MainThread]:   disable_transactions: False
+[0m17:55:18.532761 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m17:55:18.714418 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m17:55:19.522197 [debug] [MainThread]: Using duckdb connection "debug"
+[0m17:55:19.522197 [debug] [MainThread]: On debug: select 1 as id
+[0m17:55:19.522197 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:55:19.535180 [debug] [MainThread]: SQL status: OK in 0.013 seconds
+[0m17:55:19.536181 [debug] [MainThread]: On debug: Close
+[0m17:55:19.536181 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m17:55:19.536181 [info ] [MainThread]: [31m1 check failed:[0m
+[0m17:55:19.537181 [info ] [MainThread]: Project loading failed for the following reason:
+Runtime Error
+  at path []: Additional properties are not allowed ('dbt_agro_clima' was unexpected)
+
+Error encountered in C:\Users\lucas.barros\Documents\duckdb\dbt_agro_clima\dbt_project.yml
+
+
+[0m17:55:19.537181 [debug] [MainThread]: Command `dbt debug` failed at 17:55:19.537181 after 1.27 seconds
+[0m17:55:19.537181 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m17:55:19.538181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F890C659D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F890230CE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F89002C170>]}
+[0m17:55:19.538181 [debug] [MainThread]: Flushing usage events
+[0m17:55:20.999342 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:00:05.957811 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E508515C40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5084D0AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E50783F7A0>]}
+
+
+============================== 18:00:05.961814 | 3fdeb896-97c5-43d2-954a-2bbfce2ed95f ==============================
+[0m18:00:05.961814 [info ] [MainThread]: Running with dbt=1.11.7
+[0m18:00:05.961814 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\lucas.barros\\.dbt', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\lucas.barros\\Documents\\duckdb\\dbt_agro_clima\\logs'}
+[0m18:00:05.971809 [info ] [MainThread]: dbt version: 1.11.7
+[0m18:00:05.971809 [info ] [MainThread]: python version: 3.12.10
+[0m18:00:05.971809 [info ] [MainThread]: python path: C:\Users\lucas.barros\Documents\duckdb\.venv\Scripts\python.exe
+[0m18:00:05.971809 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m18:00:06.036810 [info ] [MainThread]: Using profiles dir at C:\Users\lucas.barros\.dbt
+[0m18:00:06.036810 [info ] [MainThread]: Using profiles.yml file at C:\Users\lucas.barros\.dbt\profiles.yml
+[0m18:00:06.036810 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\lucas.barros\Documents\duckdb\dbt_agro_clima\dbt_project.yml
+[0m18:00:06.037810 [info ] [MainThread]: adapter type: duckdb
+[0m18:00:06.038810 [info ] [MainThread]: adapter version: 1.10.1
+[0m18:00:06.100169 [info ] [MainThread]: Configuration:
+[0m18:00:06.101169 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:00:06.101169 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:00:06.101169 [info ] [MainThread]: Required dependencies:
+[0m18:00:06.101169 [debug] [MainThread]: Executing "git --help"
+[0m18:00:06.130168 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:00:06.130168 [debug] [MainThread]: STDERR: "b''"
+[0m18:00:06.131168 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:00:06.131168 [info ] [MainThread]: Connection:
+[0m18:00:06.131168 [info ] [MainThread]:   database: dev
+[0m18:00:06.131168 [info ] [MainThread]:   schema: main
+[0m18:00:06.131168 [info ] [MainThread]:   path: dev.duckdb
+[0m18:00:06.132167 [info ] [MainThread]:   config_options: None
+[0m18:00:06.132167 [info ] [MainThread]:   extensions: None
+[0m18:00:06.132167 [info ] [MainThread]:   settings: {}
+[0m18:00:06.132167 [info ] [MainThread]:   external_root: .
+[0m18:00:06.132167 [info ] [MainThread]:   use_credential_provider: None
+[0m18:00:06.132167 [info ] [MainThread]:   attach: None
+[0m18:00:06.133167 [info ] [MainThread]:   filesystems: None
+[0m18:00:06.133167 [info ] [MainThread]:   remote: None
+[0m18:00:06.133167 [info ] [MainThread]:   plugins: None
+[0m18:00:06.133167 [info ] [MainThread]:   disable_transactions: False
+[0m18:00:06.134167 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m18:00:06.307168 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m18:00:06.351168 [debug] [MainThread]: Using duckdb connection "debug"
+[0m18:00:06.351168 [debug] [MainThread]: On debug: select 1 as id
+[0m18:00:06.351168 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:00:06.362168 [debug] [MainThread]: SQL status: OK in 0.011 seconds
+[0m18:00:06.363169 [debug] [MainThread]: On debug: Close
+[0m18:00:06.363169 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:00:06.363169 [info ] [MainThread]: [32mAll checks passed![0m
+[0m18:00:06.364169 [debug] [MainThread]: Command `dbt debug` succeeded at 18:00:06.364169 after 0.51 seconds
+[0m18:00:06.364169 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:00:06.364169 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E50244BB90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E500017BF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E50593EE40>]}
+[0m18:00:06.364169 [debug] [MainThread]: Flushing usage events
+[0m18:00:07.830969 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:32:50.474752 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000262D6D36810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000262D79F4C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000262D7952990>]}
+
+
+============================== 12:32:50.479300 | 7482ca3b-67f5-4821-80f7-81b1c1024ea9 ==============================
+[0m12:32:50.479300 [info ] [MainThread]: Running with dbt=1.11.7
+[0m12:32:50.479300 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\lucas.barros\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\lucas.barros\\Documents\\duckdb\\dbt_agro_clima\\logs'}
+[0m12:32:50.493393 [info ] [MainThread]: dbt version: 1.11.7
+[0m12:32:50.494392 [info ] [MainThread]: python version: 3.12.10
+[0m12:32:50.494392 [info ] [MainThread]: python path: C:\Users\lucas.barros\Documents\duckdb\.venv\Scripts\python.exe
+[0m12:32:50.494392 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m12:32:50.607131 [info ] [MainThread]: Using profiles dir at C:\Users\lucas.barros\.dbt
+[0m12:32:50.607131 [info ] [MainThread]: Using profiles.yml file at C:\Users\lucas.barros\.dbt\profiles.yml
+[0m12:32:50.607131 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\lucas.barros\Documents\duckdb\dbt_agro_clima\dbt_project.yml
+[0m12:32:50.609128 [info ] [MainThread]: adapter type: duckdb
+[0m12:32:50.609675 [info ] [MainThread]: adapter version: 1.10.1
+[0m12:32:50.670692 [info ] [MainThread]: Configuration:
+[0m12:32:50.670692 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:32:50.670692 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:32:50.670692 [info ] [MainThread]: Required dependencies:
+[0m12:32:50.670692 [debug] [MainThread]: Executing "git --help"
+[0m12:32:50.700038 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:32:50.701038 [debug] [MainThread]: STDERR: "b''"
+[0m12:32:50.701038 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:32:50.701038 [info ] [MainThread]: Connection:
+[0m12:32:50.701038 [info ] [MainThread]:   database: dev
+[0m12:32:50.701038 [info ] [MainThread]:   schema: main
+[0m12:32:50.701038 [info ] [MainThread]:   path: dev.duckdb
+[0m12:32:50.702542 [info ] [MainThread]:   config_options: None
+[0m12:32:50.702542 [info ] [MainThread]:   extensions: None
+[0m12:32:50.702542 [info ] [MainThread]:   settings: {}
+[0m12:32:50.702542 [info ] [MainThread]:   external_root: .
+[0m12:32:50.702542 [info ] [MainThread]:   use_credential_provider: None
+[0m12:32:50.703545 [info ] [MainThread]:   attach: None
+[0m12:32:50.703545 [info ] [MainThread]:   filesystems: None
+[0m12:32:50.703545 [info ] [MainThread]:   remote: None
+[0m12:32:50.703545 [info ] [MainThread]:   plugins: None
+[0m12:32:50.703545 [info ] [MainThread]:   disable_transactions: False
+[0m12:32:50.703545 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m12:32:50.903616 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m12:32:50.950827 [debug] [MainThread]: Using duckdb connection "debug"
+[0m12:32:50.950827 [debug] [MainThread]: On debug: select 1 as id
+[0m12:32:50.952332 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:32:50.966671 [debug] [MainThread]: SQL status: OK in 0.014 seconds
+[0m12:32:50.966671 [debug] [MainThread]: On debug: Close
+[0m12:32:50.966671 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:32:50.967671 [info ] [MainThread]: [32mAll checks passed![0m
+[0m12:32:50.967671 [debug] [MainThread]: Command `dbt debug` succeeded at 12:32:50.967671 after 0.61 seconds
+[0m12:32:50.967671 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:32:50.968672 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000262D8BF91F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000262D3C45D00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000262D79F4C80>]}
+[0m12:32:50.968672 [debug] [MainThread]: Flushing usage events
+[0m12:32:52.638619 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:33:00.387479 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191F866BA40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191F5B33FE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191F91531A0>]}
+
+
+============================== 12:33:00.390480 | 26e6e0d1-70a8-43e3-bf80-412fff4da1a0 ==============================
+[0m12:33:00.390480 [info ] [MainThread]: Running with dbt=1.11.7
+[0m12:33:00.391480 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\lucas.barros\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\lucas.barros\\Documents\\duckdb\\dbt_agro_clima\\logs'}
+[0m12:33:00.548701 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '26e6e0d1-70a8-43e3-bf80-412fff4da1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191FA8D1FA0>]}
+[0m12:33:00.585722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '26e6e0d1-70a8-43e3-bf80-412fff4da1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191FA943F80>]}
+[0m12:33:00.587720 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m12:33:00.769972 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m12:33:00.770972 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m12:33:00.770972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '26e6e0d1-70a8-43e3-bf80-412fff4da1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019180066C60>]}
+[0m12:33:01.393023 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '26e6e0d1-70a8-43e3-bf80-412fff4da1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191FA8A1520>]}
+[0m12:33:01.425574 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\lucas.barros\Documents\duckdb\dbt_agro_clima\target\manifest.json
+[0m12:33:01.428623 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\lucas.barros\Documents\duckdb\dbt_agro_clima\target\semantic_manifest.json
+[0m12:33:01.451514 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '26e6e0d1-70a8-43e3-bf80-412fff4da1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191FA8D21E0>]}
+[0m12:33:01.452515 [info ] [MainThread]: Found 11 models, 474 macros
+[0m12:33:01.452515 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '26e6e0d1-70a8-43e3-bf80-412fff4da1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191800F59A0>]}
+[0m12:33:01.453653 [info ] [MainThread]: 
+[0m12:33:01.454653 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m12:33:01.454653 [info ] [MainThread]: 
+[0m12:33:01.454653 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m12:33:01.458654 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_dev'
+[0m12:33:01.509276 [debug] [ThreadPool]: Using duckdb connection "list_dev"
+[0m12:33:01.509276 [debug] [ThreadPool]: On list_dev: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "connection_name": "list_dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"dev"'
+    
+  
+  
+[0m12:33:01.509276 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:33:01.522675 [debug] [ThreadPool]: SQL status: OK in 0.013 seconds
+[0m12:33:01.523679 [debug] [ThreadPool]: On list_dev: Close
+[0m12:33:01.524682 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dev, now create_dev_main)
+[0m12:33:01.524682 [debug] [ThreadPool]: Creating schema "database: "dev"
+schema: "main"
+"
+[0m12:33:01.527680 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m12:33:01.528681 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='dev'
+        and type='sqlite'
+    
+  
+[0m12:33:01.528681 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m12:33:01.528681 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m12:33:01.529680 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m12:33:01.529680 [debug] [ThreadPool]: On create_dev_main: BEGIN
+[0m12:33:01.530681 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:33:01.530681 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m12:33:01.530681 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+    
+        create schema if not exists "dev"."main"
+    
+[0m12:33:01.530681 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:33:01.531680 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m12:33:01.531680 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m12:33:01.531680 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m12:33:01.532680 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:33:01.532680 [debug] [ThreadPool]: On create_dev_main: Close
+[0m12:33:01.533187 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_dev_main'
+[0m12:33:01.537188 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m12:33:01.537188 [debug] [ThreadPool]: On list_dev_main: BEGIN
+[0m12:33:01.537188 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:33:01.537188 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:33:01.537188 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m12:33:01.538189 [debug] [ThreadPool]: On list_dev_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "connection_name": "list_dev_main"} */
+select
+      'dev' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'dev'
+  
+[0m12:33:01.540724 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m12:33:01.540724 [debug] [ThreadPool]: On list_dev_main: ROLLBACK
+[0m12:33:01.542227 [debug] [ThreadPool]: Failed to rollback 'list_dev_main'
+[0m12:33:01.542227 [debug] [ThreadPool]: On list_dev_main: Close
+[0m12:33:01.543232 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '26e6e0d1-70a8-43e3-bf80-412fff4da1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191FA9580B0>]}
+[0m12:33:01.543232 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:33:01.543232 [debug] [MainThread]: On master: BEGIN
+[0m12:33:01.543232 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:33:01.544235 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m12:33:01.544235 [debug] [MainThread]: On master: COMMIT
+[0m12:33:01.544235 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:33:01.544235 [debug] [MainThread]: On master: COMMIT
+[0m12:33:01.544235 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m12:33:01.545235 [debug] [MainThread]: On master: Close
+[0m12:33:01.550236 [debug] [Thread-1 (]: Began running node model.dbt_agro_clima.stg_clima
+[0m12:33:01.550236 [info ] [Thread-1 (]: 1 of 11 START sql view model main.stg_clima .................................... [RUN]
+[0m12:33:01.550236 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.dbt_agro_clima.stg_clima'
+[0m12:33:01.551235 [debug] [Thread-1 (]: Began compiling node model.dbt_agro_clima.stg_clima
+[0m12:33:01.554741 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_agro_clima.stg_clima"
+[0m12:33:01.557741 [debug] [Thread-1 (]: Began executing node model.dbt_agro_clima.stg_clima
+[0m12:33:01.573750 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_agro_clima.stg_clima"
+[0m12:33:01.576750 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.stg_clima"
+[0m12:33:01.576750 [debug] [Thread-1 (]: On model.dbt_agro_clima.stg_clima: BEGIN
+[0m12:33:01.576750 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m12:33:01.577750 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.577750 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.stg_clima"
+[0m12:33:01.577750 [debug] [Thread-1 (]: On model.dbt_agro_clima.stg_clima: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.stg_clima"} */
+
+  
+  create view "dev"."main"."stg_clima__dbt_tmp" as (
+    with source as (
+
+    select *
+    from read_parquet('C:/Users/lucas.barros/Documents/duckdb/data/raw/clima/**/*.parquet')
+
+),
+
+renamed as (
+
+    select
+        cast(data as date) as data,
+        upper(trim(estado)) as estado,
+        trim(cidade) as cidade,
+        cast(latitude as double) as latitude,
+        cast(longitude as double) as longitude,
+        cast(temperatura_media as double) as temperatura_media,
+        cast(temperatura_maxima as double) as temperatura_maxima,
+        cast(temperatura_minima as double) as temperatura_minima,
+        cast(precipitacao_mm as double) as precipitacao_mm,
+        cast(velocidade_vento as double) as velocidade_vento
+    from source
+
+),
+
+deduplicated as (
+
+    select distinct *
+    from renamed
+
+)
+
+select * from deduplicated
+  );
+
+[0m12:33:01.582703 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m12:33:01.586710 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.stg_clima"
+[0m12:33:01.586710 [debug] [Thread-1 (]: On model.dbt_agro_clima.stg_clima: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.stg_clima"} */
+alter view "dev"."main"."stg_clima__dbt_tmp" rename to "stg_clima"
+[0m12:33:01.587710 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.593219 [debug] [Thread-1 (]: On model.dbt_agro_clima.stg_clima: COMMIT
+[0m12:33:01.593219 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.stg_clima"
+[0m12:33:01.593219 [debug] [Thread-1 (]: On model.dbt_agro_clima.stg_clima: COMMIT
+[0m12:33:01.595224 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m12:33:01.598224 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.stg_clima"
+[0m12:33:01.598224 [debug] [Thread-1 (]: On model.dbt_agro_clima.stg_clima: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.stg_clima"} */
+
+      drop view if exists "dev"."main"."stg_clima__dbt_backup" cascade
+    
+[0m12:33:01.598224 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.600224 [debug] [Thread-1 (]: On model.dbt_agro_clima.stg_clima: Close
+[0m12:33:01.601223 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '26e6e0d1-70a8-43e3-bf80-412fff4da1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191803C80E0>]}
+[0m12:33:01.601223 [info ] [Thread-1 (]: 1 of 11 OK created sql view model main.stg_clima ............................... [[32mOK[0m in 0.05s]
+[0m12:33:01.602226 [debug] [Thread-1 (]: Finished running node model.dbt_agro_clima.stg_clima
+[0m12:33:01.602226 [debug] [Thread-1 (]: Began running node model.dbt_agro_clima.stg_mercado
+[0m12:33:01.602226 [info ] [Thread-1 (]: 2 of 11 START sql view model main.stg_mercado .................................. [RUN]
+[0m12:33:01.603364 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_agro_clima.stg_clima, now model.dbt_agro_clima.stg_mercado)
+[0m12:33:01.603364 [debug] [Thread-1 (]: Began compiling node model.dbt_agro_clima.stg_mercado
+[0m12:33:01.604364 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_agro_clima.stg_mercado"
+[0m12:33:01.606363 [debug] [Thread-1 (]: Began executing node model.dbt_agro_clima.stg_mercado
+[0m12:33:01.608365 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_agro_clima.stg_mercado"
+[0m12:33:01.609365 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.stg_mercado"
+[0m12:33:01.609365 [debug] [Thread-1 (]: On model.dbt_agro_clima.stg_mercado: BEGIN
+[0m12:33:01.610366 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:33:01.610366 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.610366 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.stg_mercado"
+[0m12:33:01.610366 [debug] [Thread-1 (]: On model.dbt_agro_clima.stg_mercado: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.stg_mercado"} */
+
+  
+  create view "dev"."main"."stg_mercado__dbt_tmp" as (
+    with source as (
+
+    select *
+    from read_parquet('C:/Users/lucas.barros/Documents/duckdb/data/raw/bolsa/**/*.parquet')
+
+),
+
+renamed as (
+
+    select
+        cast(data as date) as data,
+        upper(trim(ticker)) as ticker,
+        cast(preco_abertura as double) as preco_abertura,
+        cast(preco_maximo as double) as preco_maximo,
+        cast(preco_minimo as double) as preco_minimo,
+        cast(preco_fechamento as double) as preco_fechamento,
+        cast(volume as bigint) as volume
+    from source
+
+),
+
+deduplicated as (
+
+    select distinct *
+    from renamed
+
+)
+
+select * from deduplicated
+  );
+
+[0m12:33:01.613765 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m12:33:01.614765 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.stg_mercado"
+[0m12:33:01.615765 [debug] [Thread-1 (]: On model.dbt_agro_clima.stg_mercado: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.stg_mercado"} */
+alter view "dev"."main"."stg_mercado__dbt_tmp" rename to "stg_mercado"
+[0m12:33:01.615765 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.616764 [debug] [Thread-1 (]: On model.dbt_agro_clima.stg_mercado: COMMIT
+[0m12:33:01.616764 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.stg_mercado"
+[0m12:33:01.616764 [debug] [Thread-1 (]: On model.dbt_agro_clima.stg_mercado: COMMIT
+[0m12:33:01.617764 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:33:01.619766 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.stg_mercado"
+[0m12:33:01.619766 [debug] [Thread-1 (]: On model.dbt_agro_clima.stg_mercado: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.stg_mercado"} */
+
+      drop view if exists "dev"."main"."stg_mercado__dbt_backup" cascade
+    
+[0m12:33:01.619766 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.621270 [debug] [Thread-1 (]: On model.dbt_agro_clima.stg_mercado: Close
+[0m12:33:01.621270 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '26e6e0d1-70a8-43e3-bf80-412fff4da1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191808BAF60>]}
+[0m12:33:01.621270 [info ] [Thread-1 (]: 2 of 11 OK created sql view model main.stg_mercado ............................. [[32mOK[0m in 0.02s]
+[0m12:33:01.622275 [debug] [Thread-1 (]: Finished running node model.dbt_agro_clima.stg_mercado
+[0m12:33:01.622275 [debug] [Thread-1 (]: Began running node model.dbt_agro_clima.int_clima_enriquecido
+[0m12:33:01.622275 [info ] [Thread-1 (]: 3 of 11 START sql view model main.int_clima_enriquecido ........................ [RUN]
+[0m12:33:01.623279 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_agro_clima.stg_mercado, now model.dbt_agro_clima.int_clima_enriquecido)
+[0m12:33:01.623279 [debug] [Thread-1 (]: Began compiling node model.dbt_agro_clima.int_clima_enriquecido
+[0m12:33:01.624278 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_agro_clima.int_clima_enriquecido"
+[0m12:33:01.626279 [debug] [Thread-1 (]: Began executing node model.dbt_agro_clima.int_clima_enriquecido
+[0m12:33:01.629280 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_agro_clima.int_clima_enriquecido"
+[0m12:33:01.631279 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.int_clima_enriquecido"
+[0m12:33:01.631279 [debug] [Thread-1 (]: On model.dbt_agro_clima.int_clima_enriquecido: BEGIN
+[0m12:33:01.631279 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:33:01.631279 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.632280 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.int_clima_enriquecido"
+[0m12:33:01.632280 [debug] [Thread-1 (]: On model.dbt_agro_clima.int_clima_enriquecido: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.int_clima_enriquecido"} */
+
+  
+  create view "dev"."main"."int_clima_enriquecido__dbt_tmp" as (
+    with base as (
+
+    select * from "dev"."main"."stg_clima"
+
+),
+
+final as (
+
+    select
+        data,
+        estado,
+        cidade,
+        latitude,
+        longitude,
+        temperatura_media,
+        temperatura_maxima,
+        temperatura_minima,
+        precipitacao_mm,
+        velocidade_vento,
+
+        sum(precipitacao_mm) over (
+            partition by estado, cidade
+            order by data
+            rows between 6 preceding and current row
+        ) as chuva_acumulada_7d,
+
+        avg(temperatura_media) over (
+            partition by estado, cidade
+            order by data
+            rows between 6 preceding and current row
+        ) as temperatura_media_7d,
+
+        lag(precipitacao_mm, 7) over (
+            partition by estado, cidade
+            order by data
+        ) as precipitacao_lag_7d
+
+    from base
+
+)
+
+select * from final
+  );
+
+[0m12:33:01.635793 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m12:33:01.636794 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.int_clima_enriquecido"
+[0m12:33:01.637793 [debug] [Thread-1 (]: On model.dbt_agro_clima.int_clima_enriquecido: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.int_clima_enriquecido"} */
+alter view "dev"."main"."int_clima_enriquecido__dbt_tmp" rename to "int_clima_enriquecido"
+[0m12:33:01.637793 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.638793 [debug] [Thread-1 (]: On model.dbt_agro_clima.int_clima_enriquecido: COMMIT
+[0m12:33:01.638793 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.int_clima_enriquecido"
+[0m12:33:01.638793 [debug] [Thread-1 (]: On model.dbt_agro_clima.int_clima_enriquecido: COMMIT
+[0m12:33:01.639792 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:33:01.640793 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.int_clima_enriquecido"
+[0m12:33:01.640793 [debug] [Thread-1 (]: On model.dbt_agro_clima.int_clima_enriquecido: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.int_clima_enriquecido"} */
+
+      drop view if exists "dev"."main"."int_clima_enriquecido__dbt_backup" cascade
+    
+[0m12:33:01.640793 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.642298 [debug] [Thread-1 (]: On model.dbt_agro_clima.int_clima_enriquecido: Close
+[0m12:33:01.642298 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '26e6e0d1-70a8-43e3-bf80-412fff4da1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191808C9B50>]}
+[0m12:33:01.643304 [info ] [Thread-1 (]: 3 of 11 OK created sql view model main.int_clima_enriquecido ................... [[32mOK[0m in 0.02s]
+[0m12:33:01.643304 [debug] [Thread-1 (]: Finished running node model.dbt_agro_clima.int_clima_enriquecido
+[0m12:33:01.643304 [debug] [Thread-1 (]: Began running node model.dbt_agro_clima.int_mercado_enriquecido
+[0m12:33:01.644307 [info ] [Thread-1 (]: 4 of 11 START sql view model main.int_mercado_enriquecido ...................... [RUN]
+[0m12:33:01.644307 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_agro_clima.int_clima_enriquecido, now model.dbt_agro_clima.int_mercado_enriquecido)
+[0m12:33:01.644307 [debug] [Thread-1 (]: Began compiling node model.dbt_agro_clima.int_mercado_enriquecido
+[0m12:33:01.646306 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_agro_clima.int_mercado_enriquecido"
+[0m12:33:01.647306 [debug] [Thread-1 (]: Began executing node model.dbt_agro_clima.int_mercado_enriquecido
+[0m12:33:01.649308 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_agro_clima.int_mercado_enriquecido"
+[0m12:33:01.651308 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.int_mercado_enriquecido"
+[0m12:33:01.652308 [debug] [Thread-1 (]: On model.dbt_agro_clima.int_mercado_enriquecido: BEGIN
+[0m12:33:01.652308 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:33:01.652308 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.652308 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.int_mercado_enriquecido"
+[0m12:33:01.652308 [debug] [Thread-1 (]: On model.dbt_agro_clima.int_mercado_enriquecido: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.int_mercado_enriquecido"} */
+
+  
+  create view "dev"."main"."int_mercado_enriquecido__dbt_tmp" as (
+    with base as (
+
+    select * from "dev"."main"."stg_mercado"
+
+),
+
+final as (
+
+    select
+        data,
+        ticker,
+        preco_abertura,
+        preco_maximo,
+        preco_minimo,
+        preco_fechamento,
+        volume,
+
+        (
+            preco_fechamento
+            - lag(preco_fechamento) over (
+                partition by ticker
+                order by data
+            )
+        )
+        / nullif(
+            lag(preco_fechamento) over (
+                partition by ticker
+                order by data
+            ),
+            0
+        ) as retorno_diario,
+
+        avg(preco_fechamento) over (
+            partition by ticker
+            order by data
+            rows between 6 preceding and current row
+        ) as media_movel_7d
+
+    from base
+
+)
+
+select * from final
+  );
+
+[0m12:33:01.655530 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m12:33:01.657529 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.int_mercado_enriquecido"
+[0m12:33:01.657529 [debug] [Thread-1 (]: On model.dbt_agro_clima.int_mercado_enriquecido: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.int_mercado_enriquecido"} */
+alter view "dev"."main"."int_mercado_enriquecido__dbt_tmp" rename to "int_mercado_enriquecido"
+[0m12:33:01.658529 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.659529 [debug] [Thread-1 (]: On model.dbt_agro_clima.int_mercado_enriquecido: COMMIT
+[0m12:33:01.659529 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.int_mercado_enriquecido"
+[0m12:33:01.659529 [debug] [Thread-1 (]: On model.dbt_agro_clima.int_mercado_enriquecido: COMMIT
+[0m12:33:01.660529 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:33:01.661530 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.int_mercado_enriquecido"
+[0m12:33:01.661530 [debug] [Thread-1 (]: On model.dbt_agro_clima.int_mercado_enriquecido: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.int_mercado_enriquecido"} */
+
+      drop view if exists "dev"."main"."int_mercado_enriquecido__dbt_backup" cascade
+    
+[0m12:33:01.662528 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.663392 [debug] [Thread-1 (]: On model.dbt_agro_clima.int_mercado_enriquecido: Close
+[0m12:33:01.663392 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '26e6e0d1-70a8-43e3-bf80-412fff4da1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191808F3920>]}
+[0m12:33:01.663907 [info ] [Thread-1 (]: 4 of 11 OK created sql view model main.int_mercado_enriquecido ................. [[32mOK[0m in 0.02s]
+[0m12:33:01.664420 [debug] [Thread-1 (]: Finished running node model.dbt_agro_clima.int_mercado_enriquecido
+[0m12:33:01.664958 [debug] [Thread-1 (]: Began running node model.dbt_agro_clima.int_clima_mercado
+[0m12:33:01.664958 [info ] [Thread-1 (]: 5 of 11 START sql view model main.int_clima_mercado ............................ [RUN]
+[0m12:33:01.665517 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_agro_clima.int_mercado_enriquecido, now model.dbt_agro_clima.int_clima_mercado)
+[0m12:33:01.665517 [debug] [Thread-1 (]: Began compiling node model.dbt_agro_clima.int_clima_mercado
+[0m12:33:01.667054 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_agro_clima.int_clima_mercado"
+[0m12:33:01.670276 [debug] [Thread-1 (]: Began executing node model.dbt_agro_clima.int_clima_mercado
+[0m12:33:01.672416 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_agro_clima.int_clima_mercado"
+[0m12:33:01.674523 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.int_clima_mercado"
+[0m12:33:01.674523 [debug] [Thread-1 (]: On model.dbt_agro_clima.int_clima_mercado: BEGIN
+[0m12:33:01.675039 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:33:01.675039 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.675553 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.int_clima_mercado"
+[0m12:33:01.675553 [debug] [Thread-1 (]: On model.dbt_agro_clima.int_clima_mercado: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.int_clima_mercado"} */
+
+  
+  create view "dev"."main"."int_clima_mercado__dbt_tmp" as (
+    with clima as (
+
+    select * from "dev"."main"."int_clima_enriquecido"
+
+),
+
+mercado as (
+
+    select * from "dev"."main"."int_mercado_enriquecido"
+
+),
+
+final as (
+
+    select
+        c.data,
+        c.estado,
+        c.cidade,
+        c.latitude,
+        c.longitude,
+        m.ticker,
+
+        c.temperatura_media,
+        c.temperatura_maxima,
+        c.temperatura_minima,
+        c.precipitacao_mm,
+        c.velocidade_vento,
+        c.chuva_acumulada_7d,
+        c.temperatura_media_7d,
+        c.precipitacao_lag_7d,
+
+        m.preco_abertura,
+        m.preco_maximo,
+        m.preco_minimo,
+        m.preco_fechamento,
+        m.volume,
+        m.retorno_diario,
+        m.media_movel_7d
+
+    from clima c
+    inner join mercado m
+        on c.data = m.data
+
+)
+
+select * from final
+  );
+
+[0m12:33:01.679692 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m12:33:01.681735 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.int_clima_mercado"
+[0m12:33:01.681735 [debug] [Thread-1 (]: On model.dbt_agro_clima.int_clima_mercado: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.int_clima_mercado"} */
+alter view "dev"."main"."int_clima_mercado__dbt_tmp" rename to "int_clima_mercado"
+[0m12:33:01.682241 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.682756 [debug] [Thread-1 (]: On model.dbt_agro_clima.int_clima_mercado: COMMIT
+[0m12:33:01.683269 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.int_clima_mercado"
+[0m12:33:01.683269 [debug] [Thread-1 (]: On model.dbt_agro_clima.int_clima_mercado: COMMIT
+[0m12:33:01.684292 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:33:01.686861 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.int_clima_mercado"
+[0m12:33:01.687372 [debug] [Thread-1 (]: On model.dbt_agro_clima.int_clima_mercado: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.int_clima_mercado"} */
+
+      drop view if exists "dev"."main"."int_clima_mercado__dbt_backup" cascade
+    
+[0m12:33:01.687372 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.688430 [debug] [Thread-1 (]: On model.dbt_agro_clima.int_clima_mercado: Close
+[0m12:33:01.688946 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '26e6e0d1-70a8-43e3-bf80-412fff4da1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191818E7F20>]}
+[0m12:33:01.688946 [info ] [Thread-1 (]: 5 of 11 OK created sql view model main.int_clima_mercado ....................... [[32mOK[0m in 0.02s]
+[0m12:33:01.688946 [debug] [Thread-1 (]: Finished running node model.dbt_agro_clima.int_clima_mercado
+[0m12:33:01.689949 [debug] [Thread-1 (]: Began running node model.dbt_agro_clima.dim_empresa
+[0m12:33:01.689949 [info ] [Thread-1 (]: 6 of 11 START sql table model main.dim_empresa ................................. [RUN]
+[0m12:33:01.689949 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_agro_clima.int_clima_mercado, now model.dbt_agro_clima.dim_empresa)
+[0m12:33:01.690949 [debug] [Thread-1 (]: Began compiling node model.dbt_agro_clima.dim_empresa
+[0m12:33:01.692454 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_agro_clima.dim_empresa"
+[0m12:33:01.696458 [debug] [Thread-1 (]: Began executing node model.dbt_agro_clima.dim_empresa
+[0m12:33:01.706537 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_agro_clima.dim_empresa"
+[0m12:33:01.710537 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.dim_empresa"
+[0m12:33:01.710537 [debug] [Thread-1 (]: On model.dbt_agro_clima.dim_empresa: BEGIN
+[0m12:33:01.710537 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:33:01.711539 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.711539 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.dim_empresa"
+[0m12:33:01.711539 [debug] [Thread-1 (]: On model.dbt_agro_clima.dim_empresa: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.dim_empresa"} */
+
+  
+    
+    
+
+    create  table
+      "dev"."main"."dim_empresa__dbt_tmp"
+  
+    as (
+      with empresas as (
+
+    select distinct ticker
+    from "dev"."main"."int_clima_mercado"
+
+)
+
+select
+    row_number() over (order by ticker) as id_empresa,
+    ticker,
+    case
+        when ticker = 'SLCE3' then 'SLC Agricola'
+        else ticker
+    end as nome_empresa,
+    'Agro' as setor,
+    'Agricultura' as subsetor
+from empresas
+    );
+  
+  
+[0m12:33:01.735689 [debug] [Thread-1 (]: SQL status: OK in 0.025 seconds
+[0m12:33:01.738196 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.dim_empresa"
+[0m12:33:01.738196 [debug] [Thread-1 (]: On model.dbt_agro_clima.dim_empresa: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.dim_empresa"} */
+alter table "dev"."main"."dim_empresa__dbt_tmp" rename to "dim_empresa"
+[0m12:33:01.739196 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.742196 [debug] [Thread-1 (]: On model.dbt_agro_clima.dim_empresa: COMMIT
+[0m12:33:01.742196 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.dim_empresa"
+[0m12:33:01.742196 [debug] [Thread-1 (]: On model.dbt_agro_clima.dim_empresa: COMMIT
+[0m12:33:01.788743 [debug] [Thread-1 (]: SQL status: OK in 0.046 seconds
+[0m12:33:01.790742 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.dim_empresa"
+[0m12:33:01.790742 [debug] [Thread-1 (]: On model.dbt_agro_clima.dim_empresa: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.dim_empresa"} */
+
+      drop table if exists "dev"."main"."dim_empresa__dbt_backup" cascade
+    
+[0m12:33:01.790742 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.792245 [debug] [Thread-1 (]: On model.dbt_agro_clima.dim_empresa: Close
+[0m12:33:01.792245 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '26e6e0d1-70a8-43e3-bf80-412fff4da1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191818E65A0>]}
+[0m12:33:01.792245 [info ] [Thread-1 (]: 6 of 11 OK created sql table model main.dim_empresa ............................ [[32mOK[0m in 0.10s]
+[0m12:33:01.793248 [debug] [Thread-1 (]: Finished running node model.dbt_agro_clima.dim_empresa
+[0m12:33:01.793248 [debug] [Thread-1 (]: Began running node model.dbt_agro_clima.dim_localidade
+[0m12:33:01.793248 [info ] [Thread-1 (]: 7 of 11 START sql table model main.dim_localidade .............................. [RUN]
+[0m12:33:01.793248 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_agro_clima.dim_empresa, now model.dbt_agro_clima.dim_localidade)
+[0m12:33:01.794248 [debug] [Thread-1 (]: Began compiling node model.dbt_agro_clima.dim_localidade
+[0m12:33:01.795248 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_agro_clima.dim_localidade"
+[0m12:33:01.797249 [debug] [Thread-1 (]: Began executing node model.dbt_agro_clima.dim_localidade
+[0m12:33:01.799248 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_agro_clima.dim_localidade"
+[0m12:33:01.800250 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.dim_localidade"
+[0m12:33:01.801249 [debug] [Thread-1 (]: On model.dbt_agro_clima.dim_localidade: BEGIN
+[0m12:33:01.801249 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:33:01.801249 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.802249 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.dim_localidade"
+[0m12:33:01.802249 [debug] [Thread-1 (]: On model.dbt_agro_clima.dim_localidade: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.dim_localidade"} */
+
+  
+    
+    
+
+    create  table
+      "dev"."main"."dim_localidade__dbt_tmp"
+  
+    as (
+      with localidades as (
+
+    select distinct
+        estado,
+        cidade,
+        latitude,
+        longitude
+    from "dev"."main"."int_clima_mercado"
+
+)
+
+select
+    row_number() over (order by estado, cidade) as id_localidade,
+    estado,
+    cidade,
+    latitude,
+    longitude,
+    'MT_agro' as regiao_agro
+from localidades
+    );
+  
+  
+[0m12:33:01.816895 [debug] [Thread-1 (]: SQL status: OK in 0.014 seconds
+[0m12:33:01.818896 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.dim_localidade"
+[0m12:33:01.818896 [debug] [Thread-1 (]: On model.dbt_agro_clima.dim_localidade: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.dim_localidade"} */
+alter table "dev"."main"."dim_localidade__dbt_tmp" rename to "dim_localidade"
+[0m12:33:01.818896 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.819895 [debug] [Thread-1 (]: On model.dbt_agro_clima.dim_localidade: COMMIT
+[0m12:33:01.819895 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.dim_localidade"
+[0m12:33:01.820896 [debug] [Thread-1 (]: On model.dbt_agro_clima.dim_localidade: COMMIT
+[0m12:33:01.822470 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m12:33:01.823473 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.dim_localidade"
+[0m12:33:01.823473 [debug] [Thread-1 (]: On model.dbt_agro_clima.dim_localidade: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.dim_localidade"} */
+
+      drop table if exists "dev"."main"."dim_localidade__dbt_backup" cascade
+    
+[0m12:33:01.824473 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.824473 [debug] [Thread-1 (]: On model.dbt_agro_clima.dim_localidade: Close
+[0m12:33:01.825473 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '26e6e0d1-70a8-43e3-bf80-412fff4da1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191808E7FE0>]}
+[0m12:33:01.825473 [info ] [Thread-1 (]: 7 of 11 OK created sql table model main.dim_localidade ......................... [[32mOK[0m in 0.03s]
+[0m12:33:01.825473 [debug] [Thread-1 (]: Finished running node model.dbt_agro_clima.dim_localidade
+[0m12:33:01.826473 [debug] [Thread-1 (]: Began running node model.dbt_agro_clima.dim_tempo
+[0m12:33:01.826473 [info ] [Thread-1 (]: 8 of 11 START sql table model main.dim_tempo ................................... [RUN]
+[0m12:33:01.826473 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_agro_clima.dim_localidade, now model.dbt_agro_clima.dim_tempo)
+[0m12:33:01.826473 [debug] [Thread-1 (]: Began compiling node model.dbt_agro_clima.dim_tempo
+[0m12:33:01.828473 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_agro_clima.dim_tempo"
+[0m12:33:01.830473 [debug] [Thread-1 (]: Began executing node model.dbt_agro_clima.dim_tempo
+[0m12:33:01.832976 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_agro_clima.dim_tempo"
+[0m12:33:01.834979 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.dim_tempo"
+[0m12:33:01.834979 [debug] [Thread-1 (]: On model.dbt_agro_clima.dim_tempo: BEGIN
+[0m12:33:01.834979 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:33:01.835979 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.835979 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.dim_tempo"
+[0m12:33:01.835979 [debug] [Thread-1 (]: On model.dbt_agro_clima.dim_tempo: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.dim_tempo"} */
+
+  
+    
+    
+
+    create  table
+      "dev"."main"."dim_tempo__dbt_tmp"
+  
+    as (
+      with datas as (
+
+    select distinct data
+    from "dev"."main"."int_clima_mercado"
+
+)
+
+select
+    row_number() over (order by data) as id_tempo,
+    data,
+    year(data) as ano,
+    case
+        when month(data) between 1 and 6 then 1
+        else 2
+    end as semestre,
+    month(data) as mes,
+    day(data) as dia,
+    dayofweek(data) as dia_semana
+from datas
+    );
+  
+  
+[0m12:33:01.850080 [debug] [Thread-1 (]: SQL status: OK in 0.014 seconds
+[0m12:33:01.852591 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.dim_tempo"
+[0m12:33:01.852591 [debug] [Thread-1 (]: On model.dbt_agro_clima.dim_tempo: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.dim_tempo"} */
+alter table "dev"."main"."dim_tempo__dbt_tmp" rename to "dim_tempo"
+[0m12:33:01.852591 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.853595 [debug] [Thread-1 (]: On model.dbt_agro_clima.dim_tempo: COMMIT
+[0m12:33:01.853595 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.dim_tempo"
+[0m12:33:01.854595 [debug] [Thread-1 (]: On model.dbt_agro_clima.dim_tempo: COMMIT
+[0m12:33:01.855595 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:33:01.856596 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.dim_tempo"
+[0m12:33:01.856596 [debug] [Thread-1 (]: On model.dbt_agro_clima.dim_tempo: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.dim_tempo"} */
+
+      drop table if exists "dev"."main"."dim_tempo__dbt_backup" cascade
+    
+[0m12:33:01.856596 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.857596 [debug] [Thread-1 (]: On model.dbt_agro_clima.dim_tempo: Close
+[0m12:33:01.858597 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '26e6e0d1-70a8-43e3-bf80-412fff4da1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191819148F0>]}
+[0m12:33:01.858597 [info ] [Thread-1 (]: 8 of 11 OK created sql table model main.dim_tempo .............................. [[32mOK[0m in 0.03s]
+[0m12:33:01.858597 [debug] [Thread-1 (]: Finished running node model.dbt_agro_clima.dim_tempo
+[0m12:33:01.859595 [debug] [Thread-1 (]: Began running node model.dbt_agro_clima.fato_analitica_clima_mercado
+[0m12:33:01.859595 [info ] [Thread-1 (]: 9 of 11 START sql table model main.fato_analitica_clima_mercado ................ [RUN]
+[0m12:33:01.859595 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_agro_clima.dim_tempo, now model.dbt_agro_clima.fato_analitica_clima_mercado)
+[0m12:33:01.860596 [debug] [Thread-1 (]: Began compiling node model.dbt_agro_clima.fato_analitica_clima_mercado
+[0m12:33:01.861594 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_agro_clima.fato_analitica_clima_mercado"
+[0m12:33:01.863735 [debug] [Thread-1 (]: Began executing node model.dbt_agro_clima.fato_analitica_clima_mercado
+[0m12:33:01.865734 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_agro_clima.fato_analitica_clima_mercado"
+[0m12:33:01.867736 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.fato_analitica_clima_mercado"
+[0m12:33:01.867736 [debug] [Thread-1 (]: On model.dbt_agro_clima.fato_analitica_clima_mercado: BEGIN
+[0m12:33:01.867736 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:33:01.868735 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:33:01.868735 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.fato_analitica_clima_mercado"
+[0m12:33:01.868735 [debug] [Thread-1 (]: On model.dbt_agro_clima.fato_analitica_clima_mercado: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.fato_analitica_clima_mercado"} */
+
+  
+    
+    
+
+    create  table
+      "dev"."main"."fato_analitica_clima_mercado__dbt_tmp"
+  
+    as (
+      with base as (
+
+    select * from "dev"."main"."int_clima_mercado"
+
+),
+
+tempo as (
+
+    select * from "dev"."main"."dim_tempo"
+
+),
+
+localidade as (
+
+    select * from "dev"."main"."dim_localidade"
+
+),
+
+empresa as (
+
+    select * from "dev"."main"."dim_empresa"
+
+)
+
+select
+    t.id_tempo,
+    l.id_localidade,
+    e.id_empresa,
+
+    b.temperatura_media,
+    b.temperatura_maxima,
+    b.temperatura_minima,
+    b.precipitacao_mm,
+    b.velocidade_vento,
+    b.chuva_acumulada_7d,
+    b.temperatura_media_7d,
+    b.precipitacao_lag_7d,
+
+    b.preco_abertura,
+    b.preco_maximo,
+    b.preco_minimo,
+    b.preco_fechamento,
+    b.volume,
+    b.retorno_diario,
+    b.media_movel_7d
+
+from base b
+inner join tempo t
+    on b.data = t.data
+inner join localidade l
+    on b.estado = l.estado
+   and b.cidade = l.cidade
+inner join empresa e
+    on b.ticker = e.ticker
+    );
+  
+  
+[0m12:33:01.884373 [debug] [Thread-1 (]: SQL status: OK in 0.015 seconds
+[0m12:33:01.886373 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.fato_analitica_clima_mercado"
+[0m12:33:01.886373 [debug] [Thread-1 (]: On model.dbt_agro_clima.fato_analitica_clima_mercado: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.fato_analitica_clima_mercado"} */
+alter table "dev"."main"."fato_analitica_clima_mercado__dbt_tmp" rename to "fato_analitica_clima_mercado"
+[0m12:33:01.887373 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.887373 [debug] [Thread-1 (]: On model.dbt_agro_clima.fato_analitica_clima_mercado: COMMIT
+[0m12:33:01.888373 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.fato_analitica_clima_mercado"
+[0m12:33:01.888373 [debug] [Thread-1 (]: On model.dbt_agro_clima.fato_analitica_clima_mercado: COMMIT
+[0m12:33:01.889372 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:33:01.890374 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.fato_analitica_clima_mercado"
+[0m12:33:01.890374 [debug] [Thread-1 (]: On model.dbt_agro_clima.fato_analitica_clima_mercado: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.fato_analitica_clima_mercado"} */
+
+      drop table if exists "dev"."main"."fato_analitica_clima_mercado__dbt_backup" cascade
+    
+[0m12:33:01.891374 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.892374 [debug] [Thread-1 (]: On model.dbt_agro_clima.fato_analitica_clima_mercado: Close
+[0m12:33:01.892374 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '26e6e0d1-70a8-43e3-bf80-412fff4da1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191808CA120>]}
+[0m12:33:01.892878 [info ] [Thread-1 (]: 9 of 11 OK created sql table model main.fato_analitica_clima_mercado ........... [[32mOK[0m in 0.03s]
+[0m12:33:01.892878 [debug] [Thread-1 (]: Finished running node model.dbt_agro_clima.fato_analitica_clima_mercado
+[0m12:33:01.892878 [debug] [Thread-1 (]: Began running node model.dbt_agro_clima.fato_clima
+[0m12:33:01.893882 [info ] [Thread-1 (]: 10 of 11 START sql table model main.fato_clima ................................. [RUN]
+[0m12:33:01.893882 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_agro_clima.fato_analitica_clima_mercado, now model.dbt_agro_clima.fato_clima)
+[0m12:33:01.893882 [debug] [Thread-1 (]: Began compiling node model.dbt_agro_clima.fato_clima
+[0m12:33:01.895881 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_agro_clima.fato_clima"
+[0m12:33:01.897881 [debug] [Thread-1 (]: Began executing node model.dbt_agro_clima.fato_clima
+[0m12:33:01.899883 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_agro_clima.fato_clima"
+[0m12:33:01.900882 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.fato_clima"
+[0m12:33:01.902386 [debug] [Thread-1 (]: On model.dbt_agro_clima.fato_clima: BEGIN
+[0m12:33:01.902386 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:33:01.902386 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.902386 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.fato_clima"
+[0m12:33:01.903390 [debug] [Thread-1 (]: On model.dbt_agro_clima.fato_clima: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.fato_clima"} */
+
+  
+    
+    
+
+    create  table
+      "dev"."main"."fato_clima__dbt_tmp"
+  
+    as (
+      with clima as (
+
+    select * from "dev"."main"."int_clima_enriquecido"
+
+),
+
+tempo as (
+
+    select * from "dev"."main"."dim_tempo"
+
+),
+
+localidade as (
+
+    select * from "dev"."main"."dim_localidade"
+
+)
+
+select
+    t.id_tempo,
+    l.id_localidade,
+    c.temperatura_media,
+    c.temperatura_maxima,
+    c.temperatura_minima,
+    c.precipitacao_mm,
+    c.velocidade_vento,
+    c.chuva_acumulada_7d,
+    c.temperatura_media_7d,
+    c.precipitacao_lag_7d
+from clima c
+inner join tempo t
+    on c.data = t.data
+inner join localidade l
+    on c.estado = l.estado
+   and c.cidade = l.cidade
+    );
+  
+  
+[0m12:33:01.911388 [debug] [Thread-1 (]: SQL status: OK in 0.008 seconds
+[0m12:33:01.912389 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.fato_clima"
+[0m12:33:01.912389 [debug] [Thread-1 (]: On model.dbt_agro_clima.fato_clima: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.fato_clima"} */
+alter table "dev"."main"."fato_clima__dbt_tmp" rename to "fato_clima"
+[0m12:33:01.913522 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.914522 [debug] [Thread-1 (]: On model.dbt_agro_clima.fato_clima: COMMIT
+[0m12:33:01.914522 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.fato_clima"
+[0m12:33:01.914522 [debug] [Thread-1 (]: On model.dbt_agro_clima.fato_clima: COMMIT
+[0m12:33:01.916523 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:33:01.917524 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.fato_clima"
+[0m12:33:01.917524 [debug] [Thread-1 (]: On model.dbt_agro_clima.fato_clima: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.fato_clima"} */
+
+      drop table if exists "dev"."main"."fato_clima__dbt_backup" cascade
+    
+[0m12:33:01.917524 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.918524 [debug] [Thread-1 (]: On model.dbt_agro_clima.fato_clima: Close
+[0m12:33:01.918524 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '26e6e0d1-70a8-43e3-bf80-412fff4da1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191819208C0>]}
+[0m12:33:01.919524 [info ] [Thread-1 (]: 10 of 11 OK created sql table model main.fato_clima ............................ [[32mOK[0m in 0.02s]
+[0m12:33:01.919524 [debug] [Thread-1 (]: Finished running node model.dbt_agro_clima.fato_clima
+[0m12:33:01.919524 [debug] [Thread-1 (]: Began running node model.dbt_agro_clima.fato_mercado
+[0m12:33:01.919524 [info ] [Thread-1 (]: 11 of 11 START sql table model main.fato_mercado ............................... [RUN]
+[0m12:33:01.921029 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_agro_clima.fato_clima, now model.dbt_agro_clima.fato_mercado)
+[0m12:33:01.921029 [debug] [Thread-1 (]: Began compiling node model.dbt_agro_clima.fato_mercado
+[0m12:33:01.923551 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_agro_clima.fato_mercado"
+[0m12:33:01.925551 [debug] [Thread-1 (]: Began executing node model.dbt_agro_clima.fato_mercado
+[0m12:33:01.927552 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_agro_clima.fato_mercado"
+[0m12:33:01.929551 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.fato_mercado"
+[0m12:33:01.929551 [debug] [Thread-1 (]: On model.dbt_agro_clima.fato_mercado: BEGIN
+[0m12:33:01.929551 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:33:01.930552 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.930552 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.fato_mercado"
+[0m12:33:01.930552 [debug] [Thread-1 (]: On model.dbt_agro_clima.fato_mercado: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.fato_mercado"} */
+
+  
+    
+    
+
+    create  table
+      "dev"."main"."fato_mercado__dbt_tmp"
+  
+    as (
+      with mercado as (
+
+    select * from "dev"."main"."int_mercado_enriquecido"
+
+),
+
+tempo as (
+
+    select * from "dev"."main"."dim_tempo"
+
+),
+
+empresa as (
+
+    select * from "dev"."main"."dim_empresa"
+
+)
+
+select
+    t.id_tempo,
+    e.id_empresa,
+    m.preco_abertura,
+    m.preco_maximo,
+    m.preco_minimo,
+    m.preco_fechamento,
+    m.volume,
+    m.retorno_diario,
+    m.media_movel_7d
+from mercado m
+inner join tempo t
+    on m.data = t.data
+inner join empresa e
+    on m.ticker = e.ticker
+    );
+  
+  
+[0m12:33:01.938058 [debug] [Thread-1 (]: SQL status: OK in 0.007 seconds
+[0m12:33:01.940060 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.fato_mercado"
+[0m12:33:01.940060 [debug] [Thread-1 (]: On model.dbt_agro_clima.fato_mercado: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.fato_mercado"} */
+alter table "dev"."main"."fato_mercado__dbt_tmp" rename to "fato_mercado"
+[0m12:33:01.940060 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.941060 [debug] [Thread-1 (]: On model.dbt_agro_clima.fato_mercado: COMMIT
+[0m12:33:01.941060 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.fato_mercado"
+[0m12:33:01.941060 [debug] [Thread-1 (]: On model.dbt_agro_clima.fato_mercado: COMMIT
+[0m12:33:01.942565 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:33:01.944571 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_agro_clima.fato_mercado"
+[0m12:33:01.944571 [debug] [Thread-1 (]: On model.dbt_agro_clima.fato_mercado: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_agro_clima", "target_name": "dev", "node_id": "model.dbt_agro_clima.fato_mercado"} */
+
+      drop table if exists "dev"."main"."fato_mercado__dbt_backup" cascade
+    
+[0m12:33:01.944571 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:33:01.945571 [debug] [Thread-1 (]: On model.dbt_agro_clima.fato_mercado: Close
+[0m12:33:01.945571 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '26e6e0d1-70a8-43e3-bf80-412fff4da1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191808DD5E0>]}
+[0m12:33:01.946571 [info ] [Thread-1 (]: 11 of 11 OK created sql table model main.fato_mercado .......................... [[32mOK[0m in 0.02s]
+[0m12:33:01.946571 [debug] [Thread-1 (]: Finished running node model.dbt_agro_clima.fato_mercado
+[0m12:33:01.947570 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:33:01.947570 [debug] [MainThread]: On master: BEGIN
+[0m12:33:01.947570 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m12:33:01.947570 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m12:33:01.947570 [debug] [MainThread]: On master: COMMIT
+[0m12:33:01.948568 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:33:01.948568 [debug] [MainThread]: On master: COMMIT
+[0m12:33:01.948568 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m12:33:01.948568 [debug] [MainThread]: On master: Close
+[0m12:33:01.948568 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:33:01.949568 [debug] [MainThread]: Connection 'create_dev_main' was properly closed.
+[0m12:33:01.949568 [debug] [MainThread]: Connection 'list_dev_main' was properly closed.
+[0m12:33:01.949568 [debug] [MainThread]: Connection 'model.dbt_agro_clima.fato_mercado' was properly closed.
+[0m12:33:01.949568 [info ] [MainThread]: 
+[0m12:33:01.949568 [info ] [MainThread]: Finished running 6 table models, 5 view models in 0 hours 0 minutes and 0.49 seconds (0.49s).
+[0m12:33:01.950569 [debug] [MainThread]: Command end result
+[0m12:33:01.964581 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\lucas.barros\Documents\duckdb\dbt_agro_clima\target\manifest.json
+[0m12:33:01.966581 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\lucas.barros\Documents\duckdb\dbt_agro_clima\target\semantic_manifest.json
+[0m12:33:01.973801 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\lucas.barros\Documents\duckdb\dbt_agro_clima\target\run_results.json
+[0m12:33:01.973801 [info ] [MainThread]: 
+[0m12:33:01.973801 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:33:01.974801 [info ] [MainThread]: 
+[0m12:33:01.974801 [info ] [MainThread]: Done. PASS=11 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=11
+[0m12:33:01.974801 [debug] [MainThread]: Command `dbt run` succeeded at 12:33:01.974801 after 1.71 seconds
+[0m12:33:01.975801 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191F94DFF80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191F8B4E9C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191F8B4C740>]}
+[0m12:33:01.975801 [debug] [MainThread]: Flushing usage events
+[0m12:33:03.562344 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:44:26.902933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002437464FDD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002436E2ACA10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024374326600>]}
+
+
+============================== 12:44:26.905936 | d8e13df2-90ae-4e09-80d9-b109d2700ba4 ==============================
+[0m12:44:26.905936 [info ] [MainThread]: Running with dbt=1.11.7
+[0m12:44:26.906937 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\lucas.barros\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\lucas.barros\\Documents\\duckdb\\dbt_agro_clima\\logs'}
+[0m12:44:26.916441 [info ] [MainThread]: dbt version: 1.11.7
+[0m12:44:26.916441 [info ] [MainThread]: python version: 3.12.10
+[0m12:44:26.916441 [info ] [MainThread]: python path: C:\Users\lucas.barros\Documents\duckdb\.venv\Scripts\python.exe
+[0m12:44:26.916441 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m12:44:26.983230 [info ] [MainThread]: Using profiles dir at C:\Users\lucas.barros\.dbt
+[0m12:44:26.983230 [info ] [MainThread]: Using profiles.yml file at C:\Users\lucas.barros\.dbt\profiles.yml
+[0m12:44:26.984231 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\lucas.barros\Documents\duckdb\dbt_agro_clima\dbt_project.yml
+[0m12:44:26.985231 [info ] [MainThread]: adapter type: duckdb
+[0m12:44:26.986233 [info ] [MainThread]: adapter version: 1.10.1
+[0m12:44:27.045869 [info ] [MainThread]: Configuration:
+[0m12:44:27.045869 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:44:27.045869 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:44:27.046869 [info ] [MainThread]: Required dependencies:
+[0m12:44:27.046869 [debug] [MainThread]: Executing "git --help"
+[0m12:44:27.075636 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:44:27.075636 [debug] [MainThread]: STDERR: "b''"
+[0m12:44:27.075636 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:44:27.075636 [info ] [MainThread]: Connection:
+[0m12:44:27.076636 [info ] [MainThread]:   database: dev
+[0m12:44:27.076636 [info ] [MainThread]:   schema: main
+[0m12:44:27.077385 [info ] [MainThread]:   path: dev.duckdb
+[0m12:44:27.077385 [info ] [MainThread]:   config_options: None
+[0m12:44:27.077385 [info ] [MainThread]:   extensions: None
+[0m12:44:27.077385 [info ] [MainThread]:   settings: {}
+[0m12:44:27.077385 [info ] [MainThread]:   external_root: .
+[0m12:44:27.078393 [info ] [MainThread]:   use_credential_provider: None
+[0m12:44:27.078393 [info ] [MainThread]:   attach: None
+[0m12:44:27.078393 [info ] [MainThread]:   filesystems: None
+[0m12:44:27.078393 [info ] [MainThread]:   remote: None
+[0m12:44:27.078393 [info ] [MainThread]:   plugins: None
+[0m12:44:27.078393 [info ] [MainThread]:   disable_transactions: False
+[0m12:44:27.079393 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m12:44:27.244335 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m12:44:27.288226 [debug] [MainThread]: Using duckdb connection "debug"
+[0m12:44:27.288226 [debug] [MainThread]: On debug: select 1 as id
+[0m12:44:27.289227 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:44:27.300849 [debug] [MainThread]: SQL status: OK in 0.012 seconds
+[0m12:44:27.300849 [debug] [MainThread]: On debug: Close
+[0m12:44:27.300849 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:44:27.300849 [info ] [MainThread]: [32mAll checks passed![0m
+[0m12:44:27.302353 [debug] [MainThread]: Command `dbt debug` succeeded at 12:44:27.302353 after 0.50 seconds
+[0m12:44:27.302353 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:44:27.302353 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024370C54F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024375A63110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024375A62900>]}
+[0m12:44:27.302353 [debug] [MainThread]: Flushing usage events
+[0m12:44:28.297565 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:48:32.839181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001829F4B5D00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182A2ADC740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182A26A5E20>]}
+
+
+============================== 12:48:32.842684 | 46205563-f149-4fc5-8d20-a0b6cf83f090 ==============================
+[0m12:48:32.842684 [info ] [MainThread]: Running with dbt=1.11.7
+[0m12:48:32.842684 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\lucas.barros\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\lucas.barros\\Documents\\duckdb\\dbt_agro_clima\\logs'}
+[0m12:48:32.852700 [info ] [MainThread]: dbt version: 1.11.7
+[0m12:48:32.852700 [info ] [MainThread]: python version: 3.12.10
+[0m12:48:32.852700 [info ] [MainThread]: python path: C:\Users\lucas.barros\Documents\duckdb\.venv\Scripts\python.exe
+[0m12:48:32.852700 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m12:48:32.919050 [info ] [MainThread]: Using profiles dir at C:\Users\lucas.barros\.dbt
+[0m12:48:32.919050 [info ] [MainThread]: Using profiles.yml file at C:\Users\lucas.barros\.dbt\profiles.yml
+[0m12:48:32.920050 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\lucas.barros\Documents\duckdb\dbt_agro_clima\dbt_project.yml
+[0m12:48:32.921049 [info ] [MainThread]: adapter type: duckdb
+[0m12:48:32.921049 [info ] [MainThread]: adapter version: 1.10.1
+[0m12:48:32.982176 [info ] [MainThread]: Configuration:
+[0m12:48:32.983179 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:48:32.983179 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:48:32.983179 [info ] [MainThread]: Required dependencies:
+[0m12:48:32.983179 [debug] [MainThread]: Executing "git --help"
+[0m12:48:33.012042 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:48:33.012042 [debug] [MainThread]: STDERR: "b''"
+[0m12:48:33.013047 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:48:33.013047 [info ] [MainThread]: Connection:
+[0m12:48:33.013047 [info ] [MainThread]:   database: dev
+[0m12:48:33.014046 [info ] [MainThread]:   schema: main
+[0m12:48:33.014046 [info ] [MainThread]:   path: dev.duckdb
+[0m12:48:33.014046 [info ] [MainThread]:   config_options: None
+[0m12:48:33.014046 [info ] [MainThread]:   extensions: None
+[0m12:48:33.015046 [info ] [MainThread]:   settings: {}
+[0m12:48:33.015046 [info ] [MainThread]:   external_root: .
+[0m12:48:33.015046 [info ] [MainThread]:   use_credential_provider: None
+[0m12:48:33.015046 [info ] [MainThread]:   attach: None
+[0m12:48:33.015046 [info ] [MainThread]:   filesystems: None
+[0m12:48:33.016046 [info ] [MainThread]:   remote: None
+[0m12:48:33.016046 [info ] [MainThread]:   plugins: None
+[0m12:48:33.016046 [info ] [MainThread]:   disable_transactions: False
+[0m12:48:33.017045 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m12:48:33.206298 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m12:48:33.270828 [debug] [MainThread]: Using duckdb connection "debug"
+[0m12:48:33.270828 [debug] [MainThread]: On debug: select 1 as id
+[0m12:48:33.270828 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:48:33.390668 [debug] [MainThread]: DuckDB adapter: duckdb error: IO Error: Cannot open file "\\?\C:\Users\lucas.barros\Documents\duckdb\dbt_agro_clima\dev.duckdb": O arquivo já está sendo usado por outro processo.
+
+File is already open in 
+C:\Users\lucas.barros\AppData\Local\DBeaver\dbeaver.exe (PID 24112)
+[0m12:48:33.390668 [debug] [MainThread]: DuckDB adapter: Error running SQL: select 1 as id
+[0m12:48:33.390668 [debug] [MainThread]: DuckDB adapter: Rolling back transaction.
+[0m12:48:33.390668 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:48:33.504715 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m12:48:33.504715 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:48:33.504715 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >IO Error: Cannot open file "\\?\C:\Users\lucas.barros\Documents\duckdb\dbt_agro_clima\dev.duckdb": O arquivo já está sendo usado por outro processo.
+
+File is already open in 
+C:\Users\lucas.barros\AppData\Local\DBeaver\dbeaver.exe (PID 24112)
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m12:48:33.505716 [debug] [MainThread]: Command `dbt debug` failed at 12:48:33.505716 after 0.77 seconds
+[0m12:48:33.505716 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:48:33.505716 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182A30BECF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182A43C4B00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018280016180>]}
+[0m12:48:33.506715 [debug] [MainThread]: Flushing usage events
+[0m12:48:34.993459 [debug] [MainThread]: An error was encountered while trying to flush usage events
